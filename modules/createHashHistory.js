@@ -24,7 +24,7 @@ const HashPathCoders = {
       path.charAt(0) === "!" ? path : "!/" + stripLeadingSlash(path),
     decodePath: path => (path.charAt(0) === "!" ? path.substr(1) : path)
   },
-  hashbangNoSlash: {
+  hashbangnoslash: {
     encodePath: path => path.charAt(0) === "/" ? '!' + stripLeadingSlash(path.substr(1)) : path,
     decodePath: path => path.charAt(0) === "!" ? '/' + path.substr(1) : path
   },
