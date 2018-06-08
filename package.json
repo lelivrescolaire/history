@@ -22,8 +22,7 @@
   "module": "es/index.js",
   "scripts": {
     "start": "webpack-dev-server -d --content-base ./ --history-api-fallback --inline modules/index.js",
-    "build": "node $PWD/tools/build.js",
-    "postinstall": "npm run build",
+    "build": "node ./tools/build.js",
     "prepublishOnly": "node ./tools/build.js",
     "clean": "git clean -fdX .",
     "lint": "eslint modules",
